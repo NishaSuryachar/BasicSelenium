@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <run>
+  <include name="regression"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="TestCaseAssignment.DWS"/>
+      <class name="TestCaseAssignment.KTM"/>
+      <class name="TestCaseAssignment.Redbus"/>
+      <class name="TestCaseAssignment.WoodLand"/>
+      <class name="TestCaseAssignment.BMW"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
