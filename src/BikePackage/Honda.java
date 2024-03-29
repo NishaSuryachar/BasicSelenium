@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Honda
 {
-	@Test
+	@Test(groups = {"smoke","regression"})
 	public void honda()
 	{
 		String given_url="https://www.honda2wheelersindia.com/";

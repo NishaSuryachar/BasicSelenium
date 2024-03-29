@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class RoyalEnfield 
 {
-	@Test
+	@Test(groups = "smoke")
 	public void royalEnfield()
 	{
 		String given_url="https://www.royalenfield.com/in/en/home/";

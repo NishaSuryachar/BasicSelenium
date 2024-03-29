@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-04T12:12:09 IST" name="Default suite" finished-at="2024-02-04T12:12:43 IST" duration-ms="34638">
+  <suite started-at="2024-03-10T11:32:03 IST" name="Default suite" finished-at="2024-03-10T11:32:07 IST" duration-ms="3852">
     <groups>
     </groups>
-    <test started-at="2024-02-04T12:12:09 IST" name="Default test" finished-at="2024-02-04T12:12:43 IST" duration-ms="34638">
-      <class name="PracticePg.HardAssert">
-        <test-method signature="login()[pri:0, instance:PracticePg.HardAssert@6440112d]" started-at="2024-02-04T12:12:09 IST" name="login" finished-at="2024-02-04T12:12:43 IST" duration-ms="34362" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2024-03-10T11:32:03 IST" name="Default test" finished-at="2024-03-10T11:32:07 IST" duration-ms="3852">
+      <class name="Assignments.WriteDataIntoExcelFile">
+        <test-method signature="writeDataIntoExcel()[pri:0, instance:Assignments.WriteDataIntoExcelFile@231f98ef]" started-at="2024-03-10T11:32:03 IST" name="writeDataIntoExcel" finished-at="2024-03-10T11:32:07 IST" duration-ms="3598" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[The following asserts failed:
-did not expect [https://demowebshop.tricentis.com/login] but found [https://demowebshop.tricentis.com/login]]]>
+              <![CDATA[C:\Users\hp\Desktop\Selenium\Login.xlsx (The process cannot access the file because it is being used by another process)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-did not expect [https://demowebshop.tricentis.com/login] but found [https://demowebshop.tricentis.com/login]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at PracticePg.HardAssert.login(HardAssert.java:30)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\hp\Desktop\Selenium\Login.xlsx (The process cannot access the file because it is being used by another process)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:123)
+at Assignments.WriteDataIntoExcelFile.writeDataIntoExcel(WriteDataIntoExcelFile.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,11 +49,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- PracticePg.HardAssert -->
+        </test-method> <!-- writeDataIntoExcel -->
+      </class> <!-- Assignments.WriteDataIntoExcelFile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

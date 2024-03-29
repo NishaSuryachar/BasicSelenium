@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="URL" value="https://shoppersstack.com/"/>
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ChromeBrowsing(failed)">
+    <parameter name="browsing" value="chrome"/>
     <classes>
-      <class name="TestCaseAssignment.Tc_signin__008">
+      <class name="PracticePg.CrossBrowsing">
         <methods>
-          <include name="shopperstack" invocation-numbers="0"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- TestCaseAssignment.Tc_signin__008 -->
-      <class name="TestCaseAssignment.Tc_signin_007">
-        <methods>
-          <include name="shopperstack" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- TestCaseAssignment.Tc_signin_007 -->
-      <class name="TestCaseAssignment.Tc_signin_006">
-        <methods>
-          <include name="shopperstack" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- TestCaseAssignment.Tc_signin_006 -->
-      <class name="TestCaseAssignment.Tc_signin_005">
-        <methods>
-          <include name="shopperstack" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- TestCaseAssignment.Tc_signin_005 -->
+      </class> <!-- PracticePg.CrossBrowsing -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ChromeBrowsing(failed) -->
+  <test thread-count="5" parallel="tests" name="EdgeBrowsing(failed)">
+    <parameter name="browsing" value="Edge"/>
+    <classes>
+      <class name="PracticePg.CrossBrowsing">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- PracticePg.CrossBrowsing -->
+    </classes>
+  </test> <!-- EdgeBrowsing(failed) -->
+  <test thread-count="5" parallel="tests" name="FirefoxBrowsing(failed)">
+    <parameter name="browsing" value="Firefox"/>
+    <classes>
+      <class name="PracticePg.CrossBrowsing">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- PracticePg.CrossBrowsing -->
+    </classes>
+  </test> <!-- FirefoxBrowsing(failed) -->
 </suite> <!-- Failed suite [Suite] -->
